@@ -59,32 +59,14 @@
             id="recipe-name"
             placeholder="Add a recipe name"
           />
-          <div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
             <textarea
-              class="description"
-              id="recipe-description"
+              class="ingredients"
+              id="recipe-ingredients"
               placeholder="Recipe Steps"
               rows="10"
               cols="80%"
             ></textarea>
-          </div>
-          <div id="ingredients-container">
-            <h2>Ingredients</h2>
-            <div id="ingredients-section"></div>
-            <div>
-              <form id="ingredient-form">
-                <input
-                  class="input"
-                  type="text"
-                  name="ingredient-name"
-                  placeholder="Add ingredient"
-                />
-                <button class="button-add btn" id="add-ingredient-button">
-                  Add Ingredient
-                </button>
-              </form>
-              <div id="ingredients-list"></div>
-            </div>
           </div>
           <div id="controls">
             <button class="btn" id="add-recipe">Add New Recipe</button>
@@ -93,7 +75,7 @@
       </div>
 
       <!-- displaying Recipes -->
-      <div id="displayRecipes" class="row mb-5 sample"></div>
+      <div id="displayRecipes" class="row mb-5"></div>
     </div>
   </body>
 </html>
