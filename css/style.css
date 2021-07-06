@@ -24,13 +24,13 @@
 
 /* Background Image Set up */
 body {
-  /* background-image: url("../images/food6.jpg");
+  background-image: url("../images/food6.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh; */
-  background-color: rgb(214, 203, 203) !important;
-  background-image: linear-gradient(grey, white);
   height: 100vh;
+  /* background-color: rgb(214, 203, 203) !important;
+  background-image: linear-gradient(grey, white);
+  height: 100vh; */
 }
 
 /* formating ALL buttons */
@@ -53,10 +53,6 @@ input {
   padding: 8px;
 }
 
-.container {
-  padding: 10px;
-}
-
 #recipe-ingredients,
 #recipe-name {
   padding: 10px !important;
@@ -67,13 +63,20 @@ input {
   border-radius: 5px;
 }
 
-.container {
-  margin: 0 auto;
-  width: 95%;
-  @media (min-width: 600px) {
-    width: 75%;
+#cards {
+  max-width: 50% !important;
+}
+
+.list-group {
+  padding: 10px !important;
+}
+
+@media screen {
+  (max-width: 375px)
+  #header #recipe-ingredients {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
-  @media (min-width: 900px) {
-    width: 65%;
+  #cards {
+    grid-template-columns: repeat(300px, 1fr);
   }
 }

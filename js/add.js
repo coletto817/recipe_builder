@@ -13,7 +13,7 @@ const createRecipe = (id, name, ingredientList) => {
                <h5 class="card-title">${name}</h5>
             </div>
             <ul class="list-group list-group-flush">
-              ${listItems}
+              ${ingredientList}
             </ul>
             <div class="card-body">
                 <button type="button" class="btn $btn-border-width:0 btn-success btn-sm edit-button">
