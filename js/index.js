@@ -7,28 +7,19 @@ NewRecipe.render();
 
 //The variables
 const nameInput = document.querySelector("#recipe-name");
-const description = document.querySelector("#recipe-description");
-const addIngredient = document.querySelector("#ingredient-form");
+const ingredients = document.querySelector("#recipe-ingredients");
 const addBtn = document.querySelector("#add-recipe");
 const displayRecipes = document.querySelector("#displayRecipes");
-
-// add ingredients into the recipe's array
-document.querySelector("#ingredient-form").addEventListener("submit", (e) => {
-  addIngredient(e, recipe.ingredients);
-  e.target.elements[0].value = "";
-  renderIngredients(recipe.ingredients);
-});
 
 checkFormInput = (event) => {
   event.preventDefault();
 
-  NewRecipe.addRecipes(nameInput.value, description.value, addIngredient.value);
+  NewRecipe.addRecipes(nameInput.value, ingredients.value);
 
   // For clear the field
   const formReset = () => {
     nameInput.value = "";
-    description.value = "";
-    addIngredient.value = "";
+    ingredients.value = "";
   };
 
   //Calling render, save and form reset
@@ -60,7 +51,7 @@ displayRecipes.addEventListener("click", (event) => {
   //   NewRecipe.save();
   //   NewRecipe.render();
   // }
-  //deleting recipes
+  // deleting recipes
   if (event.target.classList.contains("delete-button")) {
     let parentRecipe = event.target.parentElement.parentElement.parentElement;
     let recipeId = Number(parentRecipe.dataset.idNumber);

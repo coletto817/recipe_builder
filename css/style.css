@@ -22,17 +22,6 @@
   color: rgb(128, 118, 103);
 }
 
-#ultrabutton {
-  width: 60px;
-  height: 60px;
-  font-size: 2rem;
-  font-weight: 900;
-  background-color: #027de9;
-  border: none;
-  margin: 20px;
-  border-radius: 40px;
-}
-
 /* Background Image Set up */
 body {
   background-image: url("../images/food6.jpg");
@@ -48,6 +37,7 @@ body {
 .btn {
   border-radius: 0px !important;
   background-color: rgb(126, 106, 134) !important;
+  color: aliceblue !important;
 }
 
 #add-ingredient-button {
@@ -63,16 +53,30 @@ input {
   padding: 8px;
 }
 
-.container {
-  padding: 10px;
-}
-
-#recipe-description,
+#recipe-ingredients,
 #recipe-name {
   padding: 10px !important;
   margin: 5px 0px !important;
 }
 
-#recipe-description {
+#recipe-ingredients {
   border-radius: 5px;
+}
+
+#cards {
+  max-width: 50% !important;
+}
+
+.list-group {
+  padding: 10px !important;
+}
+
+@media screen {
+  (max-width: 375px)
+  #header #recipe-ingredients {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  #cards {
+    grid-template-columns: repeat(300px, 1fr);
+  }
 }

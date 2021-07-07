@@ -1,14 +1,13 @@
 // create Recipe
-const createRecipe = (id, name, description, addIngredient) => {
+const createRecipe = (id, name, ingredients) => {
   const html = `
-   <ul class="card-wrapping d-flex list-group col collapse"  id="collapseform" data-id-number="${id}">
+   <ul class="card-wrapping d-flex list-group col" data-id-number="${id}">
         <li class="card mb-2" style="width: 100%">
             <div class="card-body">
                <h5 class="card-title">${name}</h5>
             </div>
             <ul class="list-group list-group-flush">
-                  <li class="list-group-item">${description}</li>
-                  <li class="list-group-item">${addIngredient}</li>
+              ${ingredients}
             </ul>
             <div class="card-body">
                 <button type="button" class="btn $btn-border-width:0 btn-success btn-sm edit-button">
@@ -27,12 +26,13 @@ class RecipeCollection {
     this.recipes = [];
   }
 
-  addRecipes(name, description, addIngredient) {
+  addRecipes(name, ingredients) {
+    // const ingredientList = ingredients.split(",");
+    // console.log(`ingredientList: ${ingredientList}`);
     const recipe = {
       id: this.currentId++,
       name: name,
-      description: description,
-      addIngredient: addIngredient,
+      ingredients: ingredients,
     };
     this.recipes.push(recipe);
   }
@@ -46,8 +46,7 @@ class RecipeCollection {
       const recipeHtml = createRecipe(
         renderRecipe.id,
         renderRecipe.name,
-        renderRecipe.description,
-        renderRecipe.addIngredient
+        renderRecipe.ingredients
       );
       recipeList.unshift(recipeHtml);
     }
