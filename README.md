@@ -18,18 +18,8 @@ Thinking process
 5. introduce Js to the button
 6. when finished, style the project with css and make it responsive
 
-<<<<<<< HEAD
 Problem
-||||||| 96551c8
-a) Recipe name
-b) Ingredients list
-c) Descriptions/ method text area
-d) save and delete button
-=======
-Problem 1
->>>>>>> cf926cb73eb8f2edc6313310b28ba157f150ea5c
 
-<<<<<<< HEAD
 1. at the beginning, I focus a lot on achieving the UI design and Js at the same time, I soon noticed that I have spread out my attention across different problems at the same time.
 2. so I took a break and start fresh, breaking up the bigger problem into smaller problem.
 3. Focusing one problem at a time
@@ -42,18 +32,3 @@ To be continue...
 2. appendChild?
 3. to be able to edit the ingredients
 4. add description
-||||||| 96551c8
-<!-- Local storage -->
-=======
-1. at the beginning, I focus a lot on achieving the UI design and Js at the same time, I soon noticed that I have spread out my attention across different problems at the same time.
-2. so I took a break and start fresh, breaking up the bigger problem into smaller problem.
-3. Focusing one problem at a time
-4. Check past project and see if there's reusable codes that I can use
-5. Revise the basic / foundation in order to be comfortable again in writing DOM
-
-problem 2
-
-1. trying to seperate the ingredients into a list
-2. AppendChild?
-3. show the ideal way
->>>>>>> cf926cb73eb8f2edc6313310b28ba157f150ea5c
