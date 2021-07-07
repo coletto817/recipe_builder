@@ -7,7 +7,7 @@ const createRecipe = (id, name, ingredientList) => {
   <li class="list-group-item">sugar</li>
   `;
   const html = `
-   <ul class="card-wrapping d-flex list-group col" data-id-number="${id}">
+   <ul class="card-wrapping d-flex list-group col" id="cards" data-id-number="${id}">
         <li class="card mb-2" style="width: 100%">
             <div class="card-body">
                <h5 class="card-title">${name}</h5>
@@ -16,10 +16,10 @@ const createRecipe = (id, name, ingredientList) => {
               ${ingredientList}
             </ul>
             <div class="card-body">
-                <button type="button" class="btn $btn-border-width:0 btn-success btn-sm edit-button">
+                <button type="button" class="btn $btn-border-width:0 btn-sm edit-button">
                  Edit
                 </button>
-                <button type="button" class="btn btn-danger btn-sm delete-button">Delete</button>
+                <button type="button" class="btn btn-sm delete-button">Delete</button>
             </div>
         </li>
     </ul>`;
@@ -33,10 +33,10 @@ class RecipeCollection {
   }
 
   addRecipes(name, ingredients) {
-    console.log(`name: ${name}`);
-    console.log(`ingredients: ${ingredients}`);
+    // console.log(`name: ${name}`);
+    // console.log(`ingredients: ${ingredients}`);
     const ingredientList = ingredients.split(",");
-    console.log(`ingredientList: ${ingredientList}`);
+    // console.log(`ingredientList: ${ingredientList}`);
     const recipe = {
       id: this.currentId++,
       name: name,

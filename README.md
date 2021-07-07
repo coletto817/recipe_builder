@@ -1,8 +1,17 @@
 # recipe_builder
 
-Steps to start building
+Instruction:
 
-1. How would I like the app to be written in the most convenience way?
+1. click on the + button on the top right button
+2. form will pop up, fill in the form
+3. In add ingredients input, seperate the ingredients with comma
+4. click add ingredients to save the data
+5. card will appear at the bottom, click delete to delete the card
+   Steps to start building
+
+Thinking process
+
+1. How would I like the app to be written in the most convenience way for chef?
 2. Plan the layout of the webpage
 3. create repository on GitHub
 4. Build the basic structure of the project on VS code with html structure
@@ -16,3 +25,9 @@ Problem 1
 3. Focusing one problem at a time
 4. Check past project and see if there's reusable codes that I can use
 5. Revise the basic / foundation in order to be comfortable again in writing DOM
+
+problem 2
+
+1. trying to seperate the ingredients into a list
+2. AppendChild?
+3. show the ideal way
